@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .container{
+            width: 99vw;
+            height: 50vh;
+            background-color: gray;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .card{
+            height: 45vh;
+            width: 20vw;
+            background-color: black;
+            margin-left: 10px;
+            border-radius: 20px;
+            animation: card 5s linear .5s infinite;
+            
+        }
+        .container:hover .card{
+            animation-play-state: paused;
+        }
+
+        @keyframes card {
+            0%{ 
+               transform: translateX(-500%); 
+            }
+
+            100%{
+                transform: translateX(500%);
+            }
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        
+
+    
+    </div>
+</body>
+</html>
